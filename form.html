@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Medical Triage Form </title>
+</head>
+
+<!-- Style to be added after CSS lessons. -->
+
+<body>
+<main>
+    <h2> Medical Triage Form </h2>
+    <img
+        src="./images/logo-color.png"
+    />
+    <hr />
+    <br />
+
+    <form action="submit_page.php" method="post">
+        <label for="firstname">First name:</label>
+        <input type="text" id="firstname" name="firstname" required>
+        <br />
+        <label for="lastname">Last name:</label>
+        <input type="text" id="lastname" name="lastname" required>
+        <br /> <br />
+
+        <label for="birthdate">Date of Birth:</label>
+        <input type="date" id="birthdate" name="birthdate" required>
+        <br />
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        <br />
+        <label for="sex">Sex</label>
+        <select name="sex" id="sex">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <br /> <br />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br /> <br />
+
+        <label for="nationality">Nationality:</label><br>
+        <input type="radio" id="filipino" name="nationality" value="filipino">
+        <label for="filipino">Filipino</label> <br />
+        <input type="radio" id="others" name="nationality" value="others">
+        <label for="others">Others</label>
+        <br /> <br />
+
+        <label for="health">Health Conditions:</label><br>
+        <table border="4">
+            <thead>
+                <tr>
+                    <th colspan="3"> Select all chronic health conditions applicable. </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="alzheimers" name="health" value="alzheimers" required>
+                        <label for="alzheimers">Alzheimers</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="diabetes" name="health" value="diabetes">
+                        <label for="diabetes">Diabetes</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="asthma" name="health" value="asthma">
+                        <label for="asthma">Asthma</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="HIV" name="health" value="HIV" required>
+                        <label for="HIV">HIV Aids</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="epilepsy" name="health" value="epilepsy">
+                        <label for="epilepsy">Epilepsy</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="cancer" name="health" value="cancer">
+                        <label for="cancer">Cancer</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" id="hypertension" name="health" value="hypertension" required>
+                        <label for="hypertension">Hypertension</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="paralysis" name="health" value="paralysis">
+                        <label for="paralysis">Paralysis</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" id="lupus" name="health" value="lupus">
+                        <label for="lupus">Lupus</label>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <br /> <hr /> <br />
+
+        <label for="note">Note:</label> <br />
+        <textarea id="note" name="note" rows="4" cols="50" required></textarea>
+        <br /> <br />
+        <hr />
+
+        <label for="confirmation">User Confirmation:</label><br>
+        <input type="radio" id="confirmation" name="confirmation" value="yes" required>
+        <label for="confirmation">I agree to submit my information and allow One Health Medical Center to share this information with all relevant internal and third party bodies to ensure quality service. </label> <br />
+        <br />
+        <button type="submit"> Submit </button>
+        <br />
+    </form>
+</main>
+<hr />
+<footer>
+    <p>
+        One Health Medical Center is committed to protecting client privacy. <br />
+        To go back to the homepage, click <a href="./home.html" target="_blank">here</a>.
+    </p>
+</footer>
+</body>
+</html>

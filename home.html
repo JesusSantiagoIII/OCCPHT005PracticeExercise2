@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- The following lines for style will be kept in a comment in anticipation of CSS lessons.
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        header, main, footer {
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin-right: 15px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        form {
+            margin-top: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        table {
+            width: 60%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #1a0553;
+            padding: 20px; /* Adjust padding to increase cell size */
+            text-align: center;
+        }
+        th {
+            background-color: #3c58d6a4;
+        }
+        tr {
+            height: 50px; /* Adjust row height */
+        }
+        .left-align {
+            text-align: left;
+        }
+        .center-align {
+            text-align: center;
+        }
+        .right-align {
+            text-align: right;
+        }
+        .column-width {
+            width: 200px; /* Adjust column width */
+        }
+    </style>
+
+     -->
+</head>
+
+<body>
+    <header>
+        <h1> Welcome to My First Page </h1>
+        <nav>
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td> <a href="#about"> About </a> </td>
+                        <td> <a href="#experiences"> Experiences </a> </td>
+                        <td> <a href="#links">Links to other sample pages </a> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section id="quote">
+            <h2> Quote of the Day </h2>
+            <p>
+                <em> It is better to light one small candle than to curse the darkness. </em> <br />
+                - Eleanor Roosevelt
+            </p>
+        </section>
+    
+        <hr />
+
+        <section id="about">
+            <h2> About This Website </h2>
+            
+            <p>
+                This page is a practice exercise to demonstrate basic HTML concepts. <br />
+                We have learned how to structure an HTML document, use various tags, and create forms. <br /> <br />
+                My details:
+            </p>
+
+            <table border="4">
+            <!-- Remove border when placing back the style lines. -->
+                <thead>
+                    <tr>
+                        <th class="column-width center-align"> Batch </th>
+                        <th class="column-width center-align"> Name </th>
+                        <th class="column-width center-align" colspan="2"> Details </th>
+                    </tr>
+                </thead>
+        
+                <tbody>
+                    <tr>
+                        <td> OCCPHT05 </td>
+                        <td> Jesus Mikael Santiago III </td>
+                        <td> Day 3 </td>
+                        <td> 15 May 2024 </td>
+                    </tr>
+                </tbody>
+        
+                <tfoot>
+                    <tr>
+                        <td colspan=4> I am grateful to be part of this free online class. I am looking forward to seeing what we will be doing on Day 4. </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        
+        <hr />
+
+        <section id="experiences">
+            <h2> Experiences </h2>
+            
+            <p> Here are my experiences with the coding bootcamp so far: </p>
+            <ul>
+                <li> The pace is good - I find the discussion easy to follow. </li>
+                <li> There are many examples provided. </li>
+                <li> Questions are answered and assistance is immediately provided to anyone from the class. </li>
+                <li> Explanations are clear; plenty of information is provided about each element and item being discussed. </li>
+            </ul>
+
+            <p> If I were to rank the best features of the coding bootcamp, it would be in the following sequence: </p>
+            <ol>
+                <li> <strong> Accessibility </strong> - free and uses apps/tools that are easy to access </li>
+                <li> <strong> Clarity </strong> - very easy to understand for beginners like me </li>
+                <li> <strong> Pace </strong> - discussions are easy to follow </li>
+            </ol>
+        
+        <hr />
+
+        <section id="links">
+            <h2> Links to other pages</h2>
+            <li> <a href="./form.html" target="_blank"> Sample Form - Medical Triage </a> </li>
+            <li> <a href="./table.html" target="_blank"> Sample Table - Grading Sheet </a> </li>
+        </section>
+    </main>
+
+    <hr />
+
+    <footer>
+        <p>
+            Here is a sample statement I used to place in footers in my previous job: <br />
+            This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> Creative Commons Attribution 4.0 International License </a>.
+        </p>
+    </footer>
+</body>
+
+</html>
